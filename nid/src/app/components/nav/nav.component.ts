@@ -1,15 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import {Component} from '@angular/core';
 
+/**
+ * @title Autosize sidenav
+ */
 @Component({
-  selector: 'app-nav',
+  selector: 'sidenav-autosize-example',
   templateUrl: './nav.component.html',
-  styleUrls: ['./nav.component.css']
+  styleUrls: ['./nav.component.css'],
 })
-export class NavComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+export class SidenavAutosizeExample {
+  showFiller = false;
 }
