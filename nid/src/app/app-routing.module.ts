@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { NavComponent } from './components/nav/nav.component';
+import { WhatzappComponent } from './components/whatzapp/whatzapp.component';
 
 const routes: Routes = [
   {
-    path:'', component: NavComponent // tem que adicionar importação
+    path:'', component: WhatzappComponent // tem que adicionar importação
   }
 ];
 
