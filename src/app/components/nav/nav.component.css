@@ -1,17 +1,53 @@
-.example-container {
-    width: 500px;
-    height: 300px;
-    border: 1px solid rgba(0, 0, 0, 0.5);
+.pulse:hover,
+.pulse:focus{
+  -webkit-animation: pulse 1s;
+          animation: pulse 1s;
+  box-shadow: 0 0 0 2em transparent;
+}
+.pulse {
+  --color: white;
+  --hover: pink;
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
   }
-  
-  .example-sidenav-content {
-    display: flex;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
+}
+@-webkit-keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
   }
-  
-  .example-sidenav {
-    padding: 20px;
-  }
-  
+}
+body{
+  color: #fff;
+  background: #17181c;
+  font: 300 1em "Fita Sans", sans-serif;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+}
+button{
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+}
+h1 {
+  font-weight: 400;
+}
+code {
+  color:pink;
+  font: inherit;
+}
+button{
+  color: var(--color);
+  transition: 0.25s;
+}
+button:hover, button:focus{
+  border-color: var(--hover);
+  color: #fff;
+}

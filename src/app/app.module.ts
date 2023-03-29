@@ -27,6 +27,7 @@ import { MatCardModule } from '@angular/material/card';
 import { ContatoComponent } from './components/contato/contato.component';
 import { PrejetosComponent } from './components/prejetos/prejetos.component';
 import { SobreComponent } from './components/sobre/sobre.component';
+import { RedessociaisComponent } from './components/redessociais/redessociais.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +36,8 @@ import { SobreComponent } from './components/sobre/sobre.component';
     HomeComponent,
     ContatoComponent,
     PrejetosComponent,
-    SobreComponent
+    SobreComponent,
+    RedessociaisComponent
   ],
   imports: [
     BrowserModule,
